@@ -107,6 +107,7 @@ textarea{
     color: #3ba19c;
     border-color: #3ba19c;
     background: transparent;
+    pointer-events: none;
 }
 
 .buttons a.disabled:active{
@@ -114,6 +115,7 @@ textarea{
     background: transparent;
     border-color: #3ba19c;
     color: #3ba19c;
+    /* pointer-events: none; */
 }
 
 @media (max-width: 480px){
