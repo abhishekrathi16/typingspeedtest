@@ -52,7 +52,9 @@ async function renderNewQuote(){
         quoteDisplayElement.appendChild(charecterSpan)
     })
     resetElement.classList.add('disabled')
+    document.getElementById("reset").disabled=true
     stopElement.classList.remove('disabled')
+    document.getElementById("stop").disabled=false
     quoteInputElement.value=null
     startTimer()
     console.log(quote)
@@ -80,6 +82,8 @@ function reset(){
 
 function stop(){
     stopElement.classList.add('disabled')
+    document.getElementById("stop").disabled=true
     resetElement.classList.remove('disabled')
+    document.getElementById("reset").disabled=false
     clearInterval(timevalue)
 }
